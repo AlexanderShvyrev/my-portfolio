@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
   &.close {
@@ -75,11 +75,11 @@
       transform: translate3d(0, 0, 0);
     }
     .portrait {
-      width: 250px;
-      height: 250px;
-      background: url('../img/portrait.png');
+      width: 275px;
+      height: 275px;
+      background: url('../img/portrait.jpg');
       // border-radius: 50%;
-      // border: solid 3px rgb(239, 241, 91), #2196f3;
+      border: solid 3px rgb(239, 241, 91);
       box-shadow: 0 0 10px rgb(240, 228, 133), 0 0 20px rgb(240, 228, 133),
         0 0 60px rgb(240, 228, 133);
     }
@@ -103,7 +103,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
     &:hover {
