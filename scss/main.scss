@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
 @import 'config';
 @import 'menu';
 
@@ -20,6 +21,7 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
+  font-family: 'Raleway', sans-serif;
 
   &.lg-heading {
     font-size: 6rem;
@@ -80,7 +82,7 @@ main {
 .bio-image {
   grid-area: bioimage;
   margin: auto;
-  border: $secondary-color 3px solid;
+  // border: $secondary-color 3px solid;
 }
 .bio {
   grid-area: bio;
@@ -98,7 +100,10 @@ main {
 .job {
   background-color: lighten($primary-color, 5);
   padding: 0.5rem;
-  border-bottom: $secondary-color 5px solid;
+
+  &:hover {
+    box-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
+  }
 }
 //work projects
 
@@ -109,6 +114,7 @@ main {
 
   img {
     width: 100%;
+    height: 220px;
     border: 1px $secondary-color solid;
 
     &:hover {

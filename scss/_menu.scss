@@ -35,7 +35,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 1;
   visibility: hidden;
 
   &.show {
@@ -75,13 +75,12 @@
       transform: translate3d(0, 0, 0);
     }
     .portrait {
-      width: 275px;
-      height: 275px;
-      background: url('../img/portrait.jpg');
-      // border-radius: 50%;
-      border: solid 3px rgb(239, 241, 91);
-      box-shadow: 0 0 10px rgb(240, 228, 133), 0 0 20px rgb(240, 228, 133),
-        0 0 60px rgb(240, 228, 133);
+      width: 365px;
+      height: 281px;
+      background: url('../img/portrait.png');
+      // border-radius: 75%;
+      border: solid 3px #fff;
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
     }
   }
 
